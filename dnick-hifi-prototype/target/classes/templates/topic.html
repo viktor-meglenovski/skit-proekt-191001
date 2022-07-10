@@ -1,0 +1,61 @@
+<div class="container border rounded mt-2 text-center pb-2">
+    <div class="row">
+        <button class="badge rounded-pill bg-danger border-danger text-white fw-bold col-1 mt-3 ms-2 fs-4" onclick="history.back()">Назад</button>
+        <h1 class="mt-2 col-10" th:text="${topic.topic.title}"></h1>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-6">
+            <iframe class="col-12 h-75" th:src="${topic.topic.videoUrl}">
+            </iframe>
+            <hr/>
+            <div class="row">
+                <div class="col-8 text-start ps-3">
+                    <h4>Тековен статус: </h4>
+                </div>
+                <div class="col-4 text-end">
+                    <h4 th:if="${topic.completed}"><span class="badge bg-success rounded-pill">Завршено</span></h4>
+                    <h4 th:if="${!topic.completed}"><span class="badge bg-warning rounded-pill">Незавршено</span></h4>
+                </div>
+            </div>
+            <hr class="mt-1 mb-2"/>
+            <button th:if="${topic.completed}" id="status" class="btn btn-block btn-warning text-white col-12 btn-lg"
+               th:path="'/topic/markNotCompleted/'+${topic.topic.id}">Маркирај како незавршено</button>
+            <button th:if="${!topic.completed}" id="status" class="btn btn-block btn-success col-12 btn-lg"
+               th:path="'/topic/markCompleted/'+${topic.topic.id}">Маркирај како завршено</button>
+        </div>
+        <div class="col-6 text-center" style="height:560px;">
+            <iframe th:src="${topic.topic.text}"
+                    width="600"
+                    height="560">
+            </iframe>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#status").click(function () {
+            var link = $(this);
+            bootbox.confirm({
+                size:'large',
+                title: "<h2>Дали сте сигурни дека сакате да го промените статусот на учење на ова тема?</h2>",
+                message:"<h4>Статусот ќе може да го промените повторно</h4>",
+                buttons: {
+                    confirm: {
+                        label: 'Да',
+                        className: 'btn-success'
+                    },
+                    cancel: {
+                        label: 'Не',
+                        className: 'btn-danger'
+                    }
+                },
+                callback: function (result) {
+                    if (result) {
+                        window.location.href = link.attr('path');
+                    }
+                }
+            });
+        });
+    });
+</script>

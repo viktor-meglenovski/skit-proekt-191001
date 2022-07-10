@@ -1,0 +1,124 @@
+<div class="container text-center">
+    <h1 class="mt-2">Тестирај го своето знаење</h1>
+    <hr/>
+    <div class="row">
+        <div class="col-6">
+            <div class="border text-start p-2" th:each="q, iStat:${questions.subList(0,4)}">
+                <h5 th:text="'Прашање #'+${iStat.count}"></h5>
+                <p class="mb-1 fw-bold" th:text="${q.text}">Текст на прашање?</p>
+                <label class="d-block mb-2" th:each="a:${q.answers}">
+                    <input type="radio" th:name="${q.id}" th:value="${a.charAt(0)}" th:text="${a}" class="me-1" oninvalid="this.setCustomValidity('Одговорете го ова прашање')">
+                </label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="border text-start p-2" th:each="q, iStat:${questions.subList(4,8)}">
+                <h5 th:text="'Прашање #'+${iStat.count+4}"></h5>
+                <p class="mb-1 fw-bold" th:text="${q.text}">Текст на прашање?</p>
+                <label class="d-block mb-2" th:each="a:${q.answers}">
+                    <input type="radio" th:name="${q.id}" th:value="${a.charAt(0)}" th:text="${a}" class="me-1" oninvalid="this.setCustomValidity('Одговорете го ова прашање')">
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row mb-2">
+        <div class="col-6">
+            <button id="cancel" path="/myprofile" class="btn btn-warning text-white btn-lg btn-block col-12">Откажи</button>
+        </div>
+        <div class="col-6">
+            <button id="finish" class="btn btn-success text-white btn-lg btn-block col-12">Заврши</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#cancel").click(function(){
+            var link = $(this);
+            bootbox.confirm({
+                size:'large',
+                title: "<h2>Дали сте сигурни дека сакате да прекините со решавање на тестот?</h2>",
+                message:"<h4>Вашите досегашни одговори на овој тест НЕМА да бидат зачувани!</h4>",
+                buttons: {
+                    confirm: {
+                        label: 'Да',
+                        className: 'btn-danger'
+                    },
+                    cancel: {
+                        label: 'Не',
+                        className: 'btn-warning text-white'
+                    }
+                },
+                callback: function (result) {
+                    if (result) {
+                        window.location.href = link.attr('path');
+                    }
+                }
+            });
+        });
+    })
+</script>
+<script>
+    $(document).ready(function(){
+        var answers=[]
+        $("#finish").click(function(){
+            answers=[]
+            $("input[type='radio']:checked").map(function(){
+                answers.push({id:$(this).attr("name"),answer:$(this).attr("value")});
+            });
+            if(answers.length<8){
+                bootbox.alert({
+                    size:"large",
+                    title:"",
+                    message:"<h2>Мора да ги одговорите сите прашања пред да го завршите тестот!</h2>",
+                    buttons: {
+                        ok: {
+                            label: 'Во ред',
+                            className: 'btn-success'
+                        },
+                    },
+                })
+            }else{
+                var modal = bootbox.dialog({
+                    size:'large',
+                    title: "<h3>Резултати од тестот</h3>",
+                    message: "<h3>Резултати од тестот</h3>",
+                    buttons: [
+                        {
+                            label: "Затвори",
+                            className: "btn btn-warning text-white pull-left",
+                            callback: function () {
+                                window.location.href="/myprofile";
+                            }
+                        },
+                        {
+                            label: "Резултати и Беџови",
+                            className: "btn btn-danger pull-left",
+                            callback: function () {
+                                window.location.href="/results";
+                            }
+                        }
+                    ],
+                    show: false,
+                    onEscape: function () {
+                        modal.modal("hide");
+                        window.location.href="/myprofile";
+                    }
+                });
+                modal.modal("show");
+                $.ajax({
+                    type : "POST",
+                    url : "/test",
+                    contentType: "application/json",
+                    data : JSON.stringify(answers),
+                    success : function(response) {
+                        $(".bootbox-body").html(response);
+                    },
+                    error : function(e) {
+                        console.log('Error: ' + e);
+                    }
+                });
+            }
+        });
+    })
+</script>

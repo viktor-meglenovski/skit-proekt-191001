@@ -1,0 +1,102 @@
+<div class="container border rounded mt-2 text-center pb-2">
+    <div class="row">
+        <a class="badge rounded-pill bg-danger border-danger text-white fw-bold col-1 mt-4 ms-2 fs-4"
+                href="/myprofile" style="text-decoration: none;">Назад
+        </a>
+        <h1 class="text-center mt-3 col-10">Научи повеќе</h1>
+    </div>
+    <hr/>
+    <div class="row">
+
+        <div class="col-6 text-center">
+            <table class="container-fluid w-100 col-12 table p-0 table table-stripped" id="learn-table">
+                <tbody id="tbody-helper">
+                <tr th:each="topic:${topics.subList(0,4)}" class="row align-items-center mb-1">
+                    <td class="col-4 p-0 text-center align-middle">
+                        <img th:src="${topic.topic.imageUrl}" class="zoomInImages" style="height: 100px;border-radius: 15px;"/></td>
+                    <td class="col-3 p-0 text-left align-middle fw-bold" th:text="${topic.topic.title}"></td>
+                    <td class="col-3 p-0 text-center align-middle"><a th:href="'/topic/details/'+${topic.topic.id}"
+                                                                      class="btn btn-danger text-white btn-block col-10">Детали</a>
+                    </td>
+                    <td th:if="${topic.completed}" class="col-2 p-0 text-center align-middle"><a title="Завршено!">
+                        <button class="btn btn-success status" th:path="'/topic/markNotCompleted/'+${topic.topic.id}" >&#10003;</button>
+                    </a></td>
+                    <td th:if="${!topic.completed}" class="col-2 p-0 text-center align-middle"><a
+                            title="Не е завршено!">
+                        <button class="btn btn-warning text-white status" th:path="'/topic/markCompleted/'+${topic.topic.id}">X</button>
+                    </a></td>
+                </tr>
+                </tbody>
+            </table>
+            <a href="/test" class="btn btn-danger btn-lg btn-block col-12 mt-2">Започни сo тестирање!</a>
+        </div>
+        <div class="col-6 text-center">
+            <table class="container-fluid w-100 col-12 table p-0 table table-stripped" id="learn-table">
+                <tbody id="tbody-helper">
+                <tr th:each="topic:${topics.subList(4,8)}" class="row align-items-center mb-1">
+                    <td class="col-4 p-0 text-center align-middle"><img th:src="${topic.topic.imageUrl}"
+                                                                        class="zoomInImages" style="height: 100px;border-radius: 15px;"/></td>
+                    <td class="col-3 p-0 text-left align-middle fw-bold" th:text="${topic.topic.title}"></td>
+                    <td class="col-3 p-0 text-center align-middle"><a th:href="'/topic/details/'+${topic.topic.id}"
+                                                                      class="btn btn-danger text-white btn-block col-10">Детали</a>
+                    </td>
+<!--                    <button class="btn btn-success status" th:if="${topic.completed}" th:path="'/topic/markAsNotCompleted/'+${topic.topic.id}">&#10003;</button>-->
+<!--                    <button class="btn btn-warning text-white status" th:if="${!topic.completed}" th:path="'/topic/markCompleted/'+${topic.topic.id}">X</button>-->
+
+                    <td th:if="${topic.completed}" class="col-2 p-0 text-center align-middle"><a title="Завршено!">
+                        <button class="btn btn-success status" th:if="${topic.completed}" th:path="'/topic/markNotCompleted/'+${topic.topic.id}">&#10003;</button>
+                    </a></td>
+                    <td th:if="${!topic.completed}" class="col-2 p-0 text-center align-middle"><a
+                            title="Не е завршено!">
+                        <button class="btn btn-warning text-white status" th:if="${!topic.completed}" th:path="'/topic/markCompleted/'+${topic.topic.id}">X</button>
+                    </a></td>
+                </tr>
+                </tbody>
+            </table>
+            <a href="/results" class="btn btn-danger text-white btn-lg btn-block col-12 mt-2">Резултати и Беџови</a>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".zoomInImages").on("mouseenter", function (e) {
+            $(this).animate({height: '+=10', width: '+=10'})
+        });
+        $(".zoomInImages").on("mouseleave", function (e) {
+            $(this).animate({height: '-=10', width: '-=10'})
+        });
+    })
+</script>
+<script>
+    $(function () {
+        $(document).tooltip();
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $(".status").click(function () {
+            var link = $(this);
+            bootbox.confirm({
+                size:'large',
+                title: "<h2>Дали сте сигурни дека сакате да го промените статусот на учење на ова тема?</h2>",
+                message:"<h4>Статусот ќе може да го промените повторно</h4>",
+                buttons: {
+                    confirm: {
+                        label: 'Да',
+                        className: 'btn-success'
+                    },
+                    cancel: {
+                        label: 'Не',
+                        className: 'btn-danger'
+                    }
+                },
+                callback: function (result) {
+                    if (result) {
+                        window.location.href = link.attr('path');
+                    }
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,89 @@
+<head>
+
+    <style>
+        .small-image {
+            height: 100px;
+            border-radius: 15px;
+        }
+
+        td, tbody, table {
+            border: none;
+        }
+
+        thead {
+            display: none;
+        }
+
+        .form-check-input:checked {
+            background-color: #dc3545;
+            border-color: rgb(220, 53, 69);
+        }
+
+        .form-check-input:focus {
+            border-color: #dc3545;
+            box-shadow: 0 0 0 0.25rem rgb(220 53 69 / 25%);
+        }
+
+        .form-switch .form-check-input:focus {
+            background-image: url("./images/circle_red.png");
+        }
+
+        .form-switch .form-check-input:checked {
+            background-image: url("./images/circle_white.png");
+        }
+    </style>
+</head>
+<body>
+<div class="container border rounded mt-2 text-center pb-2">
+    <h1 class="mt-2 mb-4" th:text="'Добре дојде назад @' + ${user.username}"></h1>
+    <hr class="mb-1"/>
+    <div class="row">
+        <div class="col-6 text-center">
+            <h2 class="mt-2" >Информации за твојот профил</h2>
+            <hr class="mb-1"/>
+            <div class="row text-start">
+                <div class="col-6">
+                    <h3 class="mt-4 mb-4">Име:</h3>
+                    <h3 class="mt-4 mb-4">Презиме:</h3>
+                    <h3 class="mt-4 mb-4">Корисничко име:</h3>
+                    <h3 class="mt-4 mb-4">Направени тестови:</h3>
+                    <h3 class="mt-4 mb-4">Највисоки поени:</h3>
+                    <h3 class="mt-4 mb-4">Освоени беџови:</h3>
+                </div>
+                <div class="col-6">
+                    <h3 class="mt-4 mb-4" th:text="${user.name}"></h3>
+                    <h3 class="mt-4 mb-4" th:text="${user.surname}"></h3>
+                    <h3 class="mt-4 mb-4" th:text="${user.username}"></h3>
+                    <h3 class="mt-4 mb-4" th:text="${numberOfTests}"></h3>
+                    <h3 class="mt-4 mb-4" th:text="${highestScore}"></h3>
+                    <h3 class="mt-4 mb-4" th:text="${user.badges.size()}+'/'+${allBadges.size()}"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 text-center">
+            <h2 class="mt-2" >Опции</h2>
+            <hr class="mb-1"/>
+            <a href="/learn" class="btn btn-danger text-white btn-lg btn-block col-12 mt-4">Научи повеќе</a>
+            <a href="/test" class="btn btn-danger text-white btn-lg btn-block col-12 mt-5">Тестирај го своето знаење</a>
+            <a href="/results" class="btn btn-danger text-white btn-lg btn-block col-12 mt-5">Резултати и Беџови</a>
+            <a href="/logout" class="btn btn-danger text-white btn-lg btn-block col-12 mt-5">Одјави се</a>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(".zoomInImages").on("mouseenter", function (e) {
+            $(this).animate({height: '+=10', width: '+=10'})
+        });
+        $(".zoomInImages").on("mouseleave", function (e) {
+            $(this).animate({height: '-=10', width: '-=10'})
+        });
+    })
+</script>
+<script>
+    $(function () {
+        $(document).tooltip();
+    });
+</script>
+</body>
