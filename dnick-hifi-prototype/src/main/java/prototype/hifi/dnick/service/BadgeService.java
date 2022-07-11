@@ -13,13 +13,13 @@ public interface BadgeService {
     Badge getThreeTests();
     Badge getOneTest();
 
-    void checkForScore100(User user,int points);
-    void checkForScoreOver90(User user, int points);
-    void checkForFiveTests(User user);
-    void checkForThreeTests(User user);
-    void checkForOneTest(User user);
+    boolean checkForScore100(User user,int points);
+    boolean checkForScoreOver90(User user, int points);
+    boolean checkForFiveTests(User user);
+    boolean checkForThreeTests(User user);
+    boolean checkForOneTest(User user);
 
-    void checkForAll(TestResult testResult);
+    boolean checkForAll(TestResult testResult);
 
     List<Badge> getAllBadges();
 

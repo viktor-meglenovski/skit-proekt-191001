@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface TestResultService {
     TestResult saveNewResult(User user, int points);
-    void initResultsForUser(User user);
+    int initResultsForUser(User user);
     List<TestResult> getTopThreeResultsForUser(User user);
     int getNumberOfTestsForUser(User user);
 }

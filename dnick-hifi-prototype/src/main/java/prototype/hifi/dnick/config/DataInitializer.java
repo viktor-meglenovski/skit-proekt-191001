@@ -73,18 +73,18 @@ public class DataInitializer {
         badgeRepository.save(points100);
 
 
-        User test = userService.register("ViktorM", "test", "test", "Viktor", "Meglenovski", Role.ROLE_USER);
+        User test = userService.register("ViktorM", "test", "test", "test", "test", Role.ROLE_USER);
 
-        topicService.markAsCompleted("Skrshenici", test);
-        topicService.markAsCompleted("SrcevUdar", test);
-        topicService.markAsCompleted("Krvarenje", test);
-
-        TestResult testResult1 = testResultService.saveNewResult(test, 92);
-        TestResult testResult2 = testResultService.saveNewResult(test, 70);
-        TestResult testResult3 = testResultService.saveNewResult(test, 15);
-        badgeService.checkForAll(testResult1);
-        badgeService.checkForAll(testResult2);
-        badgeService.checkForAll(testResult3);
+//        topicService.markAsCompleted("Skrshenici", test);
+//        topicService.markAsCompleted("SrcevUdar", test);
+//        topicService.markAsCompleted("Krvarenje", test);
+//
+//        TestResult testResult1 = testResultService.saveNewResult(test, 92);
+//        TestResult testResult2 = testResultService.saveNewResult(test, 70);
+//        TestResult testResult3 = testResultService.saveNewResult(test, 15);
+//        badgeService.checkForAll(testResult1);
+//        badgeService.checkForAll(testResult2);
+//        badgeService.checkForAll(testResult3);
 
         loadQuestions();
     }

@@ -38,20 +38,12 @@ public class TopicServiceImpl implements TopicService {
     }
 
     @Override
-    public Boolean changeStatusForUser(String topicId, User user) {
-        Topic t=getById(topicId);
-        TopicUser tu=topicUserRepository.findByTopicAndUser(t,user);
-        tu.setCompleted(!tu.getCompleted());
-        topicUserRepository.save(tu);
-        return tu.getCompleted();
-    }
-
-    @Override
-    public void setAllTopicsAsNotCompletedForUser(User user) {
+    public boolean setAllTopicsAsNotCompletedForUser(User user) {
         List<Topic> topics=findAll();
         for(Topic t: topics){
             topicUserRepository.save(new TopicUser(user,t,false));
         }
+        return true;
     }
 
     @Override

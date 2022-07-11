@@ -50,61 +50,62 @@ public class BadgeServiceImpl implements BadgeService {
     }
 
     @Override
-    public void checkForScore100(User user, int points) {
-        if(points==100){
-            if(!user.getBadges().contains(getScore100())){
-                user.getBadges().add(getScore100());
-                userRepository.save(user);
-            }
+    public boolean checkForScore100(User user, int points) {
+        if(points==100 && !user.getBadges().contains(getScore100())){
+            user.getBadges().add(getScore100());
+            userRepository.save(user);
+            return true;
         }
+        return false;
     }
     @Override
-    public void checkForScoreOver90(User user, int points) {
-        if(points>=90){
-            if(!user.getBadges().contains(getScoreOver90())){
-                user.getBadges().add(getScoreOver90());
-                userRepository.save(user);
-            }
+    public boolean checkForScoreOver90(User user, int points) {
+        if(points>=90 && !user.getBadges().contains(getScoreOver90())){
+            user.getBadges().add(getScoreOver90());
+            userRepository.save(user);
+            return true;
         }
-    }
-
-    @Override
-    public void checkForFiveTests(User user) {
-        if(testResultService.getNumberOfTestsForUser(user)>=5){
-            if(!user.getBadges().contains(getFiveTests())){
-                user.getBadges().add(getFiveTests());
-                userRepository.save(user);
-            }
-        }
+        return false;
     }
 
     @Override
-    public void checkForThreeTests(User user) {
-        if(testResultService.getNumberOfTestsForUser(user)>=3){
-            if(!user.getBadges().contains(getThreeTests())){
-                user.getBadges().add(getThreeTests());
-                userRepository.save(user);
-            }
+    public boolean checkForFiveTests(User user) {
+        if(testResultService.getNumberOfTestsForUser(user)>=5 && !user.getBadges().contains(getFiveTests())){
+            user.getBadges().add(getFiveTests());
+            userRepository.save(user);
+            return true;
         }
+        return false;
     }
 
     @Override
-    public void checkForOneTest(User user) {
-        if(testResultService.getNumberOfTestsForUser(user)>=1){
-            if(!user.getBadges().contains(getOneTest())){
-                user.getBadges().add(getOneTest());
-                userRepository.save(user);
-            }
+    public boolean checkForThreeTests(User user) {
+        if(testResultService.getNumberOfTestsForUser(user)>=3 &&!user.getBadges().contains(getThreeTests())){
+            user.getBadges().add(getThreeTests());
+            userRepository.save(user);
+            return true;
         }
+        return false;
     }
 
     @Override
-    public void checkForAll(TestResult testResult) {
+    public boolean checkForOneTest(User user) {
+        if(testResultService.getNumberOfTestsForUser(user)>=1 && !user.getBadges().contains(getOneTest())){
+            user.getBadges().add(getOneTest());
+            userRepository.save(user);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean checkForAll(TestResult testResult) {
         checkForFiveTests(testResult.getUser());
         checkForOneTest(testResult.getUser());
         checkForScore100(testResult.getUser(),testResult.getPoints());
         checkForScoreOver90(testResult.getUser(),testResult.getPoints());
         checkForThreeTests(testResult.getUser());
+        return true;
     }
 
     @Override

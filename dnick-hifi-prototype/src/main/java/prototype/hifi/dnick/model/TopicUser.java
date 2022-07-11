@@ -24,4 +24,8 @@ public class TopicUser {
     public TopicUser() {
 
     }
+    public boolean setCompleted(boolean status){
+        this.completed=status;
+        return status;
+    }
 }

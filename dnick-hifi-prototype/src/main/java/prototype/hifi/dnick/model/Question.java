@@ -23,6 +23,12 @@ public class Question {
         this.answers=answers;
         this.correctAnswer = correctAnswer;
     }
+    public Question(Long id,String text, List<String> answers, char correctAnswer) {
+        this.id=id;
+        this.text = text;
+        this.answers=answers;
+        this.correctAnswer = correctAnswer;
+    }
 
     public Question() {
 

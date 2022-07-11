@@ -10,8 +10,7 @@ public interface TopicService {
     Topic saveTopic(String id, String title, String imageUrl,String videoUrl, String description);
     Topic getById(String id);
     List<Topic> findAll();
-    Boolean changeStatusForUser(String topicId, User user);
-    void setAllTopicsAsNotCompletedForUser(User user);
+    boolean setAllTopicsAsNotCompletedForUser(User user);
     List<TopicUser> findAllForUser(User user);
     TopicUser findTopicForUser(String topicId, User user);
     void markAsCompleted(String topicId,User user);

@@ -25,10 +25,13 @@ public class TestResultServiceImpl implements TestResultService {
     }
 
     @Override
-    public void initResultsForUser(User user) {
+    public int initResultsForUser(User user) {
+        int x=0;
         for(int i=0;i<3;i++){
             testResultRepository.save(new TestResult(user,0));
+            x++;
         }
+        return x;
     }
 
     @Override

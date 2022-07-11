@@ -1,5 +1,6 @@
 package prototype.hifi.dnick.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import prototype.hifi.dnick.model.User;
 import prototype.hifi.dnick.model.exceptions.InvalidArgumentsException;
@@ -12,6 +13,7 @@ public class AuthServiceImpl implements AuthService {
 
     private final UserRepository userRepository;
 
+    @Autowired
     public AuthServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
