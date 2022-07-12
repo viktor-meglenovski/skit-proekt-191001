@@ -54,9 +54,9 @@
                     <h3 class="mt-4 mb-4" th:text="${user.name}"></h3>
                     <h3 class="mt-4 mb-4" th:text="${user.surname}"></h3>
                     <h3 class="mt-4 mb-4" th:text="${user.username}"></h3>
-                    <h3 class="mt-4 mb-4" th:text="${numberOfTests}"></h3>
-                    <h3 class="mt-4 mb-4" th:text="${highestScore}"></h3>
-                    <h3 class="mt-4 mb-4" th:text="${user.badges.size()}+'/'+${allBadges.size()}"></h3>
+                    <h3 class="mt-4 mb-4" th:text="${numberOfTests}" id="numberOfTests"></h3>
+                    <h3 class="mt-4 mb-4" th:text="${highestScore}" id="highestScore"></h3>
+                    <h3 class="mt-4 mb-4" th:text="${user.badges.size()}+'/'+${allBadges.size()}" id="numberOfBadges"></h3>
                 </div>
             </div>
         </div>

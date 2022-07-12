@@ -32,6 +32,13 @@ public class ResultsAndBadgesTestScenarios {
         return resultsAndBadgesPage;
     }
     @Test
+    public void testBadgeStatuses(){
+        //login and go to page
+        ResultsAndBadgesPage resultsAndBadgesPage=loginAndGoToResultsAndBadgesPage();
+
+        resultsAndBadgesPage.checkBadges(0,5);
+    }
+    @Test
     public void testBackButton(){
         //login and go to page
         ResultsAndBadgesPage resultsAndBadgesPage=loginAndGoToResultsAndBadgesPage();

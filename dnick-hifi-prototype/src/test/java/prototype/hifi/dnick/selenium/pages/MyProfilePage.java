@@ -1,5 +1,6 @@
 package prototype.hifi.dnick.selenium.pages;
 
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -9,6 +10,9 @@ public class MyProfilePage extends AbstractPage{
     private WebElement learn;
     private WebElement test;
     private WebElement resultsAndBadges;
+    private WebElement numberOfTests;
+    private WebElement numberOfBadges;
+    private WebElement highestScore;
     public MyProfilePage(WebDriver driver){
         super(driver);
     }
@@ -30,5 +34,12 @@ public class MyProfilePage extends AbstractPage{
     public static ResultsAndBadgesPage navigateToResultsAndBadgesPage(WebDriver driver,MyProfilePage myProfilePage){
         myProfilePage.resultsAndBadges.click();
         return PageFactory.initElements(driver, ResultsAndBadgesPage.class);
+    }
+    public void checkNumberOfTestsAndBadges(int tests, int badges){
+        Assertions.assertEquals(Integer.valueOf(numberOfTests.getText()),tests);
+        Assertions.assertEquals(numberOfBadges.getText(),badges+"/5");
+    }
+    public void checkPoints(int points){
+        Assertions.assertEquals(Integer.valueOf(highestScore.getText()),points);
     }
 }

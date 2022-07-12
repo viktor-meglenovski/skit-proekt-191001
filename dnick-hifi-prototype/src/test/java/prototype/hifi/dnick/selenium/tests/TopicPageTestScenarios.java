@@ -43,14 +43,6 @@ public class TopicPageTestScenarios {
         Assertions.assertTrue(LearnPage.checkIfLearnPage(this.driver,learnPage));
     }
     @Test
-    public void testInitialStatus(){
-        //login and navigate to topic page
-        TopicPage topicPage=loginAndGoToTopicPage();
-
-        //check status
-        topicPage.checkStatus("Незавршено","Маркирај како завршено");
-    }
-    @Test
     public void testChangeStatus() throws InterruptedException {
         //login and navigate to topic page
         TopicPage topicPage=loginAndGoToTopicPage();

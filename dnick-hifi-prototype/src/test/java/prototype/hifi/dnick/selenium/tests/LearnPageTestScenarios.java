@@ -66,14 +66,6 @@ public class LearnPageTestScenarios {
         Assertions.assertTrue(TopicPage.checkIfTopicPage(this.driver,topicPage));
     }
     @Test
-    public void testInitialButtons(){
-        //login and go to page
-        LearnPage learnPage=loginAndGoToLearnPage();
-
-        //check initial buttons
-        learnPage.checkButtons(0,8);
-    }
-    @Test
     public void testMarkAsCompletedSuccessfully() throws InterruptedException {
         //login and go to page
         LearnPage learnPage=loginAndGoToLearnPage();
