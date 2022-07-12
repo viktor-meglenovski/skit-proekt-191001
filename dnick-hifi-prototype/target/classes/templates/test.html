@@ -1,5 +1,5 @@
 <div class="container text-center">
-    <h1 class="mt-2">Тестирај го своето знаење</h1>
+    <h1 class="mt-2" id="title">Тестирај го своето знаење</h1>
     <hr/>
     <div class="row">
         <div class="col-6">
@@ -24,10 +24,10 @@
     <hr/>
     <div class="row mb-2">
         <div class="col-6">
-            <button id="cancel" path="/myprofile" class="btn btn-warning text-white btn-lg btn-block col-12">Откажи</button>
+            <button id="cancel" name="cancel" path="/myprofile" class="btn btn-warning text-white btn-lg btn-block col-12">Откажи</button>
         </div>
         <div class="col-6">
-            <button id="finish" class="btn btn-success text-white btn-lg btn-block col-12">Заврши</button>
+            <button id="finish" name="finish" class="btn btn-success text-white btn-lg btn-block col-12">Заврши</button>
         </div>
     </div>
 </div>
@@ -42,11 +42,13 @@
                 buttons: {
                     confirm: {
                         label: 'Да',
-                        className: 'btn-danger'
+                        className: 'btn-danger',
+                        id:'cancelYes'
                     },
                     cancel: {
                         label: 'Не',
-                        className: 'btn-warning text-white'
+                        className: 'btn-warning text-white',
+                        id:'cancelNo'
                     }
                 },
                 callback: function (result) {
@@ -74,7 +76,8 @@
                     buttons: {
                         ok: {
                             label: 'Во ред',
-                            className: 'btn-success'
+                            className: 'btn-success',
+                            id:'answerAllOk'
                         },
                     },
                 })
@@ -86,14 +89,16 @@
                     buttons: [
                         {
                             label: "Затвори",
-                            className: "btn btn-warning text-white pull-left",
+                            className: "btn btn-warning text-white pull-left bootbox-cancel",
+                            id:'closeResults',
                             callback: function () {
                                 window.location.href="/myprofile";
                             }
                         },
                         {
                             label: "Резултати и Беџови",
-                            className: "btn btn-danger pull-left",
+                            className: "btn btn-danger pull-left bootbox-accept",
+                            id:'goToBadges',
                             callback: function () {
                                 window.location.href="/results";
                             }

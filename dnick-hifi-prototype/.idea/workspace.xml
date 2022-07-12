@@ -5,32 +5,134 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa3de76-57b8-4aea-975c-757ada42cbfd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_82.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_3_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_api_3_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_core_3_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_3_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_httpclient5_3_2_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_auto_common_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_annotations_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_shapesecurity_salvation2_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_netty_netty_reactive_streams_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dev_failsafe_failsafe_3_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_bonigarcia_webdrivermanager_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_kqueue_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_x86_64_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_78_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_api_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_context_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_exporter_logging_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_common_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_extension_autoconfigure_1_13_0_alpha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_extension_autoconfigure_spi_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_logs_1_13_0_alpha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_metrics_1_13_0_alpha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_trace_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_semconv_1_13_0_alpha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_ous_jtoml_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_60_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_60_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_cssparser_1_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_60_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_client5_httpclient5_5_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_5_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_asynchttpclient_async_http_client_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_asynchttpclient_async_http_client_netty_utils_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_brotli_dec_0_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_48_v20220622.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_48_v20220622.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_48_v20220622.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_48_v20220622.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_48_v20220622.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_48_v20220622.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_48_v20220622.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_14_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_3_62_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chromium_driver_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v85_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v93_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v94_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v95_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_xpi_driver_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_http_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_json_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_4_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_36.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_12_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dnick.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dnick.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/config/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/config/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/model/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/model/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/model/TopicUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/model/TopicUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/BadgeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/BadgeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/TestResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/TestResultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/TopicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/TopicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/impl/BadgeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/impl/BadgeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/impl/TestResultServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/impl/TestResultServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/impl/TopicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prototype/hifi/dnick/service/impl/TopicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/config/DataInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/config/DataInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/model/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/model/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/model/TopicUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/model/TopicUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/BadgeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/BadgeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/TestResultService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/TestResultService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/TopicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/TopicService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/AuthServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/AuthServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/BadgeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/BadgeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/TestResultServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/TestResultServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/TestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/TestServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/TopicServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/TopicServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/prototype/hifi/dnick/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/learn.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/learn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/myprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/myprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/topic.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/topic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/learn.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/learn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/myprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/myprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/prototype/hifi/dnick/mutants/BadgeServiceMutationTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/prototype/hifi/dnick/mutants/BadgeServiceMutationTesting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/prototype/hifi/dnick/mutants/TestResultServiceMutationTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/prototype/hifi/dnick/mutants/TestResultServiceMutationTesting.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +177,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="PIT Runner.ServicesImplementationMutationTesting">
+  <component name="RunManager" selected="JUnit.TestPageTestScenarios.testCompleteTestAndGoToBadges">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -89,79 +191,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BadgeServiceMutationTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LearnPageTestScenarios.testInitialButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dnick" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="prototype.hifi.dnick.mutants.*" />
+          <option name="PATTERN" value="prototype.hifi.dnick.selenium.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.mutants" />
-      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.mutants.BadgeServiceMutationTesting" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BadgeServiceMutationTesting.testCheckForOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dnick" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="prototype.hifi.dnick.mutants.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.mutants" />
-      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.mutants.BadgeServiceMutationTesting" />
-      <option name="METHOD_NAME" value="testCheckForOneTest" />
+      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.selenium.tests.LearnPageTestScenarios" />
+      <option name="METHOD_NAME" value="testInitialButtons" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BadgeServiceMutationTesting.testCheckForScore100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LearnPageTestScenarios.testMarkAsCompletedSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dnick" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="prototype.hifi.dnick.mutants.*" />
+          <option name="PATTERN" value="prototype.hifi.dnick.selenium.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.mutants" />
-      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.mutants.BadgeServiceMutationTesting" />
-      <option name="METHOD_NAME" value="testCheckForScore100" />
+      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.selenium.tests.LearnPageTestScenarios" />
+      <option name="METHOD_NAME" value="testMarkAsCompletedSuccessfully" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestResultServiceMutationTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPageTestScenarios.testCompleteTestAndGoToBadges" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dnick" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="prototype.hifi.dnick.mutants.*" />
+          <option name="PATTERN" value="prototype.hifi.dnick.selenium.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.mutants" />
-      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.mutants.TestResultServiceMutationTesting" />
+      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.selenium.tests.TestPageTestScenarios" />
+      <option name="METHOD_NAME" value="testCompleteTestAndGoToBadges" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TopicPageTestScenarios" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dnick" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="prototype.hifi.dnick.selenium.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.selenium.tests.TopicPageTestScenarios" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestResultServiceMutationTesting.testGetNumberOfTestsForUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TopicPageTestScenarios.testChangeStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dnick" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="prototype.hifi.dnick.mutants.*" />
+          <option name="PATTERN" value="prototype.hifi.dnick.selenium.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.mutants" />
-      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.mutants.TestResultServiceMutationTesting" />
-      <option name="METHOD_NAME" value="testGetNumberOfTestsForUser" />
+      <option name="PACKAGE_NAME" value="prototype.hifi.dnick.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="prototype.hifi.dnick.selenium.tests.TopicPageTestScenarios" />
+      <option name="METHOD_NAME" value="testChangeStatus" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,21 +284,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestResultServiceMutationTesting" />
-      <item itemvalue="JUnit.TestResultServiceMutationTesting.testGetNumberOfTestsForUser" />
-      <item itemvalue="JUnit.BadgeServiceMutationTesting" />
-      <item itemvalue="JUnit.BadgeServiceMutationTesting.testCheckForScore100" />
-      <item itemvalue="JUnit.BadgeServiceMutationTesting.testCheckForOneTest" />
       <item itemvalue="PIT Runner.ServicesImplementationMutationTesting" />
       <item itemvalue="Spring Boot.DnickApplication" />
+      <item itemvalue="JUnit.LearnPageTestScenarios.testInitialButtons" />
+      <item itemvalue="JUnit.LearnPageTestScenarios.testMarkAsCompletedSuccessfully" />
+      <item itemvalue="JUnit.TopicPageTestScenarios" />
+      <item itemvalue="JUnit.TopicPageTestScenarios.testChangeStatus" />
+      <item itemvalue="JUnit.TestPageTestScenarios.testCompleteTestAndGoToBadges" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BadgeServiceMutationTesting" />
-        <item itemvalue="JUnit.BadgeServiceMutationTesting.testCheckForScore100" />
-        <item itemvalue="JUnit.BadgeServiceMutationTesting.testCheckForOneTest" />
-        <item itemvalue="JUnit.TestResultServiceMutationTesting.testGetNumberOfTestsForUser" />
-        <item itemvalue="JUnit.TestResultServiceMutationTesting" />
+        <item itemvalue="JUnit.TestPageTestScenarios.testCompleteTestAndGoToBadges" />
+        <item itemvalue="JUnit.TopicPageTestScenarios.testChangeStatus" />
+        <item itemvalue="JUnit.TopicPageTestScenarios" />
+        <item itemvalue="JUnit.LearnPageTestScenarios.testMarkAsCompletedSuccessfully" />
+        <item itemvalue="JUnit.LearnPageTestScenarios.testInitialButtons" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +313,9 @@
       <workItem from="1657456433031" duration="6345000" />
       <workItem from="1657462881993" duration="8376000" />
       <workItem from="1657475999509" duration="6285000" />
-      <workItem from="1657533183340" duration="2214000" />
+      <workItem from="1657533183340" duration="14166000" />
+      <workItem from="1657552558176" duration="9773000" />
+      <workItem from="1657623939612" duration="10804000" />
     </task>
     <servers />
   </component>

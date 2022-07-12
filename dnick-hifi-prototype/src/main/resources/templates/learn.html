@@ -1,9 +1,9 @@
 <div class="container border rounded mt-2 text-center pb-2">
     <div class="row">
         <a class="badge rounded-pill bg-danger border-danger text-white fw-bold col-1 mt-4 ms-2 fs-4"
-                href="/myprofile" style="text-decoration: none;">Назад
+                href="/myprofile" style="text-decoration: none;" id="back" name="back">Назад
         </a>
-        <h1 class="text-center mt-3 col-10">Научи повеќе</h1>
+        <h1 class="text-center mt-3 col-10" id="title">Научи повеќе</h1>
     </div>
     <hr/>
     <div class="row">
@@ -16,7 +16,7 @@
                         <img th:src="${topic.topic.imageUrl}" class="zoomInImages" style="height: 100px;border-radius: 15px;"/></td>
                     <td class="col-3 p-0 text-left align-middle fw-bold" th:text="${topic.topic.title}"></td>
                     <td class="col-3 p-0 text-center align-middle"><a th:href="'/topic/details/'+${topic.topic.id}"
-                                                                      class="btn btn-danger text-white btn-block col-10">Детали</a>
+                                                                      class="btn btn-danger text-white btn-block col-10 detailsButtons">Детали</a>
                     </td>
                     <td th:if="${topic.completed}" class="col-2 p-0 text-center align-middle"><a title="Завршено!">
                         <button class="btn btn-success status" th:path="'/topic/markNotCompleted/'+${topic.topic.id}" >&#10003;</button>
@@ -28,7 +28,7 @@
                 </tr>
                 </tbody>
             </table>
-            <a href="/test" class="btn btn-danger btn-lg btn-block col-12 mt-2">Започни сo тестирање!</a>
+            <a href="/test" class="btn btn-danger btn-lg btn-block col-12 mt-2" id="startTest" name="startTest">Започни сo тестирање!</a>
         </div>
         <div class="col-6 text-center">
             <table class="container-fluid w-100 col-12 table p-0 table table-stripped" id="learn-table">
@@ -38,7 +38,7 @@
                                                                         class="zoomInImages" style="height: 100px;border-radius: 15px;"/></td>
                     <td class="col-3 p-0 text-left align-middle fw-bold" th:text="${topic.topic.title}"></td>
                     <td class="col-3 p-0 text-center align-middle"><a th:href="'/topic/details/'+${topic.topic.id}"
-                                                                      class="btn btn-danger text-white btn-block col-10">Детали</a>
+                                                                      class="btn btn-danger text-white btn-block col-10 detailsButtons">Детали</a>
                     </td>
 <!--                    <button class="btn btn-success status" th:if="${topic.completed}" th:path="'/topic/markAsNotCompleted/'+${topic.topic.id}">&#10003;</button>-->
 <!--                    <button class="btn btn-warning text-white status" th:if="${!topic.completed}" th:path="'/topic/markCompleted/'+${topic.topic.id}">X</button>-->
@@ -53,7 +53,7 @@
                 </tr>
                 </tbody>
             </table>
-            <a href="/results" class="btn btn-danger text-white btn-lg btn-block col-12 mt-2">Резултати и Беџови</a>
+            <a href="/results" class="btn btn-danger text-white btn-lg btn-block col-12 mt-2" name="resultsAndBadges" id="resultsAndBadges">Резултати и Беџови</a>
         </div>
     </div>
 </div>
@@ -84,11 +84,11 @@
                 buttons: {
                     confirm: {
                         label: 'Да',
-                        className: 'btn-success'
+                        className: 'btn-success yes'
                     },
                     cancel: {
                         label: 'Не',
-                        className: 'btn-danger'
+                        className: 'btn-danger no'
                     }
                 },
                 callback: function (result) {

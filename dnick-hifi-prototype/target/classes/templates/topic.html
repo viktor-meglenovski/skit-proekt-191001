@@ -1,7 +1,7 @@
 <div class="container border rounded mt-2 text-center pb-2">
     <div class="row">
-        <button class="badge rounded-pill bg-danger border-danger text-white fw-bold col-1 mt-3 ms-2 fs-4" onclick="history.back()">Назад</button>
-        <h1 class="mt-2 col-10" th:text="${topic.topic.title}"></h1>
+        <a style="text-decoration: none;" class="badge rounded-pill bg-danger border-danger text-white fw-bold col-1 mt-3 ms-2 fs-4" href="/learn" id="back" name="back">Назад</a>
+        <h1 class="mt-2 col-10" th:text="${topic.topic.title}" id="title" name="title"></h1>
     </div>
     <hr/>
     <div class="row">
@@ -14,8 +14,8 @@
                     <h4>Тековен статус: </h4>
                 </div>
                 <div class="col-4 text-end">
-                    <h4 th:if="${topic.completed}"><span class="badge bg-success rounded-pill">Завршено</span></h4>
-                    <h4 th:if="${!topic.completed}"><span class="badge bg-warning rounded-pill">Незавршено</span></h4>
+                    <h4 th:if="${topic.completed}"><span class="badge bg-success rounded-pill" id="badgeStatus">Завршено</span></h4>
+                    <h4 th:if="${!topic.completed}"><span class="badge bg-warning rounded-pill" id="badgeStatus">Незавршено</span></h4>
                 </div>
             </div>
             <hr class="mt-1 mb-2"/>
@@ -43,11 +43,11 @@
                 buttons: {
                     confirm: {
                         label: 'Да',
-                        className: 'btn-success'
+                        className: 'btn-success yes'
                     },
                     cancel: {
                         label: 'Не',
-                        className: 'btn-danger'
+                        className: 'btn-danger no'
                     }
                 },
                 callback: function (result) {

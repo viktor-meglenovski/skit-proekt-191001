@@ -6,30 +6,20 @@
             <h4 style="text-align: justify; text-justify: inter-word;">Креирајте свој профил и продлабочете го вашето знаење поврзано со давање на прва помош!</h4>
         </div>
         <div class="col-6">
-            <a class="btn btn-danger btn-lg btn-block col-10 offset-1 mb-2" href="/login" sec:authorize="!isAuthenticated()">Најава</a>
-            <a class="btn btn-danger btn-lg btn-block col-10 offset-1 mb-2" href="/register" sec:authorize="!isAuthenticated()">Регистрација</a>
+            <a id="toLogin" class="btn btn-danger btn-lg btn-block col-10 offset-1 mb-2" href="/login" sec:authorize="!isAuthenticated()">Најава</a>
+            <a id="toRegister" class="btn btn-danger btn-lg btn-block col-10 offset-1 mb-2" href="/register" sec:authorize="!isAuthenticated()">Регистрација</a>
 
-            <a class="btn btn-danger btn-lg btn-block col-10 offset-1 mb-2" href="/myprofile" sec:authorize="isAuthenticated()">Мој Профил</a>
-            <a class="btn btn-danger btn-lg btn-block col-10 offset-1 mb-2" href="/logout" sec:authorize="isAuthenticated()">Одјави се</a>
+            <a id="toMyProfile" class="btn btn-danger btn-lg btn-block col-10 offset-1 mb-2" href="/myprofile" sec:authorize="isAuthenticated()">Мој Профил</a>
+            <a id="toLogout" class="btn btn-danger btn-lg btn-block col-10 offset-1 mb-2" href="/logout" sec:authorize="isAuthenticated()">Одјави се</a>
         </div>
     </div>
     <hr/>
-<!--    <div class="row">-->
-<!--        <div class="col-6">-->
-<!--            <h5 style="text-align: justify; text-justify: inter-word;">Или пак, почнете со учење без да креирате свој профил.</h5>-->
-<!--            <span class="fst-italic" style="text-align: justify; text-justify: inter-word;">(Вашиот напредок нема да биде зачуван во овој случај)</span>-->
-<!--        </div>-->
-<!--        <div class="col-6">-->
-<!--            <a class="btn btn-danger btn-lg btn-block col-10 offset-1 mb-2" href="/myprofile">Продолжи без профил</a>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <hr/>-->
     <div class="row">
         <div class="col-6">
-            <img th:src="@{'images/red_cross.png'}" style=width:100%;>
+            <img class="red_cross_image" th:src="@{'images/red_cross.png'}" style=width:100%;>
         </div>
         <div class="col-6">
-            <img src="/images/red_cross.png" style=width:100%;>
+            <img class="red_cross_image" src="/images/red_cross.png" style=width:100%;>
         </div>
     </div>
 
